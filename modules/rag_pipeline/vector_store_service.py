@@ -457,7 +457,9 @@ class VectorStoreService:
         final_cost = max(MIN_CREDIT_DEDUCTION, rounded_total).quantize(CREDIT_PRECISION, rounding=ROUND_HALF_UP)
         return float(final_cost)
 
-    def _deduct_embedding_credits_sync(self, model_id: str, input_tokens: int, meta: Optional[Dict[str, Any]] = None) -> None:
+    def _deduct_embedding_credits_sync(
+        self, model_id: str, input_tokens: int, meta: Optional[Dict[str, Any]] = None
+    ) -> None:
         if not self.org_id or self.billing_mode != "platform":
             return
 
