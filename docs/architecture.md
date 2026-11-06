@@ -86,5 +86,5 @@ This is the architecture as built for a single-operator, single-instance
 deployment. It is **not** a horizontally-scaled, multi-region system — the
 WebSocket layer in particular is in-memory/single-process (no cross-instance
 pub/sub), and campaign sending runs as a background thread rather than a
-distributed task queue. See `showcase_findings.md` in the source analysis
-for the honest tradeoffs behind each component.
+distributed task queue. The README's "Known limitations" table lists the
+tradeoffs behind each component and what I'd change next.
