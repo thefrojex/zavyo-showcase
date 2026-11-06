@@ -5,9 +5,9 @@
 I was the sole engineer on Zavyo: backend, frontend, AI/RAG layer, billing, and deployment. It lets businesses run WhatsApp campaigns, AI support bots, and no-code conversation flows on the official Meta WhatsApp Cloud API, with every customer organization isolated in a shared multi-tenant system.
 
 > The production source is private. This repo contains the architecture, an engineering write-up, and sanitized excerpts of the most interesting modules, published with the company's permission.
+>
+> More context and my other projects: [thefrojex.github.io](https://thefrojex.github.io)
 
-<!-- TODO: add a 60–90s demo video / GIF here -->
-<!-- TODO: add 3–4 screenshots: flow builder, inbox, campaign analytics, bot config -->
 
 ---
 
@@ -22,7 +22,6 @@ I was the sole engineer on Zavyo: backend, frontend, AI/RAG layer, billing, and 
 | **Integrations** | Meta WhatsApp Cloud API · Razorpay · Shopify · Google OAuth |
 | **Scale of codebase** | ~330 API endpoints · 30 route modules · 30 services · 79 Mongo collections · ~69k LOC backend |
 | **Deployment** | Dockerized, deployed via Coolify |
-<!-- TODO: add a usage row if you can share it, e.g. "Live for X months · Y orgs · Z messages sent" -->
 
 ## What the product does
 
@@ -139,11 +138,10 @@ modules/
   rag_pipeline/            vector_store_service.py  pluggable vector backend + credit metering
 docs/
   architecture.md          full architecture diagram and component notes
-  screenshots/
 ```
 
 These are excerpts meant to show the approach. They are not a runnable copy of the product.
 
 ## Contact
 
-**Abhinav** · [GitHub](https://github.com/thefrojex) · [LinkedIn](https://linkedin.com/in/thefrojex)
+**Abhinav Sharma** · [Portfolio](https://thefrojex.github.io) · [GitHub](https://github.com/thefrojex) · [LinkedIn](https://linkedin.com/in/thefrojex)
